@@ -1,5 +1,3 @@
-rosalind
---------
-Solutions to Rosalind problems.
-http://rosalind.info/problems/list-view/
+### Solutions to Rosalind problems
 
+http://rosalind.info/problems/list-view/
