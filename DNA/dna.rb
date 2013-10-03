@@ -1,5 +1,4 @@
 # [http://rosalind.info/problems/dna/]
-# Date: 2013.08.10
 
 dna = ARGV[0]
 count = Hash.new(0)
