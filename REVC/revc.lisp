@@ -1,4 +1,4 @@
-; [http://rosalind.info/problems/rna/]
+; [http://rosalind.info/problems/revc/]
 
 (defun inc (x) (+ x 1))
 
