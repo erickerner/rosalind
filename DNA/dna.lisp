@@ -2,10 +2,10 @@
 
 (defun inc (x) (+ x 1))
 
-(defun count-nucleotides (xs)
+(defun count-nucleotides (dna)
 	(let ((as 0) (cs 0) (gs 0) (ts 0))
-		(dotimes (i (length xs))
-			(let ((b (subseq xs i (inc i))))
+		(dotimes (i (length dna))
+			(let ((b (subseq dna i (inc i))))
 				(cond
 					((equal b "A") (incf as))
 					((equal b "C") (incf cs))
