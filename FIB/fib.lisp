@@ -2,18 +2,21 @@
 
 (defvar *terms*
 	'(
+		(0 . 0)
 		(1 . 1)
 		(2 . 1)
 	)
 )
 
 (defun fib (n k)
-	(let ((term (cdr (assoc n *terms*))))
-		(when (null term)
-			(setf term (+ (fib (- n 1) k) (* k (fib (- n 2) k))))
-			(push (cons n term) *terms*))
-		term
-	)
+	(if (< n 0)
+		nil
+		(let ((term (cdr (assoc n *terms*))))
+			(when (null term)
+				(setf term (+ (fib (- n 1) k) (* k (fib (- n 2) k))))
+				(push (cons n term) *terms*))
+			term
+		))
 )
 
 (defun main ()
